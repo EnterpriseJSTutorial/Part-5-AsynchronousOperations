@@ -1,18 +1,6 @@
 
-import * as request from 'request';
+import { callbackHell } from './callback_hell';
+import { promises } from './promises';
 
-request({ url: 'https://randomuser.me/api/', json: true },
-    function(error, response, data) {
-        if (error) {
-            console.error(error);
-        }
-        else if (response.statusCode != 200) {
-            console.log('Got error code:', response.statusCode);
-        }
-        else {
-            console.log('Got user data:', data);
-        }
-    }
-);
-
-console.log('Got Here.')
+// callbackHell();
+promises();
