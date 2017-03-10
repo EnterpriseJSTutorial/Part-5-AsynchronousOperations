@@ -2,7 +2,7 @@
 import * as request from 'request';
 
 request({ url: 'https://randomuser.me/api/', json: true },
-    function(error, response, body) {
+    function(error, response, data) {
         if (error) {
             console.error(error);
         }
@@ -10,7 +10,9 @@ request({ url: 'https://randomuser.me/api/', json: true },
             console.log('Got error code:', response.statusCode);
         }
         else {
-            console.log('Got user data:', body);
+            console.log('Got user data:', data);
         }
     }
 );
+
+console.log('Got Here.')
