@@ -7,6 +7,7 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/es6-promise": "0.0.32",
     "@types/request": "0.0.41",
     "typescript": "2.2.1"
   },
