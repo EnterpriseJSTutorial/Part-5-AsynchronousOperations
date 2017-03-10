@@ -1,0 +1,16 @@
+{
+  "name": "enterprisejs",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/request": "0.0.41",
+    "typescript": "2.2.1"
+  },
+  "dependencies": {
+    "request": "2.81.0"
+  }
+}
