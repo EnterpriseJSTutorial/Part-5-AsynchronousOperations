@@ -1,8 +1,8 @@
 
 import * as request from 'request';
 
-request('https://randomuser.me/api/',
-    function(error, response, data) {
+request({ url: 'https://randomuser.me/api/', json: true },
+    function(error, response, body) {
         if (error) {
             console.error(error);
         }
@@ -10,7 +10,7 @@ request('https://randomuser.me/api/',
             console.log('Got error code:', response.statusCode);
         }
         else {
-            console.log('Got user data:', data);
+            console.log('Got user data:', body);
         }
     }
 );
