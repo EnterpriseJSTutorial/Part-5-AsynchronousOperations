@@ -1,7 +1,7 @@
 
 import request from 'axios';
 
-export function promises() {
+export function promiseChain() {
 
     let user: any;
 
@@ -15,14 +15,15 @@ export function promises() {
     .then((response) => {
         let quote = response.data.contents.quotes[0];
         console.log(user.name.first + ' says: ' + quote.quote);
+        return user.name.first;
     })
     
-    .then(() => {
-        console.log('Got Here.');
+    .then((name) => {
+        console.log('Got Here:', name);
     })
     
     .catch((err) => {
-        console.log(err);
+        console.error(err);
     })
 
 }
