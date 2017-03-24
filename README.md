@@ -6,4 +6,4 @@ contain the source code used in the articles.
 ## Part 5 - Asyncronous Operations
 
 You can find links to all of my articles here:
-https://medium.com/@RevJSMonkey
+https://medium.com/@dupski
